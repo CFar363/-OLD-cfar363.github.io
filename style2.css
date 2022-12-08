@@ -1,0 +1,83 @@
+/*css reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    font-size: 32px;
+    background: #011e2f;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    cursor: pointer;
+    color: #fff;
+    transition: .5s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+nav ul li:hover{
+    background: #fff;
+    color: #000;
+}
+
+.hero-image{
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.5)), 
+    url(https://images.unsplash.com/photo-1589481169991-40ee02888551?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    /* Change what part of the image you are showing*/
+    background-position: center;
+    /* set image to size of viewport*/
+    height: 100vh;
+    height: calc(100vh - 56px);
+    background-size: cover;
+    /*use flex to center horizontally and vertically*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-text{
+    color: #fff;
+    text-align: center;
+    /**/
+}
+.hero-text h2{
+    font-size: 50px;
+}
+.hero-btn{
+    text-decoration: none;
+    color:#fff;
+    background: #000;
+    padding: 10px 30px;
+    margin-top: 10px;
+    /* I have to change anchor tag to inline block*/
+    display: inline-block;
+    /*width: 500px;*/
+    border-radius: 10px;
+    transition: .5s
+}
+.hero-btn:hover{
+    background: #fff;
+    color: #000;
+}
+@media screen and (max-width: 600px){
+    nav ul{
+        flex-direction: column;
+    }
+    .hero-image{
+        height: calc()
+    }
+    
+
+}
